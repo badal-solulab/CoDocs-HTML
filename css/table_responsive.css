@@ -1,0 +1,148 @@
+.w100w{
+    padding-left: 10px !important;
+    width: 100% !important;
+}
+.w40w{
+  width: 40% !important;
+}
+.w60w{
+  width: 60% !important;
+}
+.paginatr{
+    display: none;
+}
+.disp-img{
+   display: none;
+}
+.border-grey {
+border-bottom: 1px solid #E7EDFF;
+}
+.bg-tab-info {
+background-color: #f3f6ff;
+}
+.c-grey {
+color: #858585 !important;
+}
+.part-1 {
+padding: 10px 0;
+}
+.search-funcs {
+display: none;
+}
+.main-flex {
+display: flex;
+}
+.w50w {
+width: 50%;
+}
+.w75w {
+width: 75%;
+}
+.w25w {
+width: 25%;
+}
+@media (max-width: 992px) {
+
+}
+@media only screen and (max-width: 767px) {
+  
+    .case-content-res{
+    width: 50% !important;
+    }
+
+    .w100w{
+        width: 100% !important;
+    }
+    .titles {
+        display: none;
+      }
+  .paginatr{
+      margin: 0 16px;
+      display: block;
+  }
+  .pagination-cont-res{
+    
+      margin: 16px 0;
+  }
+  .back-page{
+    background: #FFFFFF;
+border: 1px solid #E7EDFF;
+box-sizing: border-box;
+border-radius: 6px;
+padding: 8px 16px;
+  }
+  .main-page-paginatn{
+      color: #0F4EFB;
+    background:  #E7EDFF;
+border: 1px solid #E7EDFF;
+box-sizing: border-box;
+border-radius: 6px;
+padding: 8px 16px;
+  }
+  .right-page{
+    background: #FFFFFF;
+border: 1px solid #E7EDFF;
+box-sizing: border-box;
+border-radius: 6px;
+padding: 8px 16px;
+  }
+  .back-page:hover, .main-page-paginatn:hover, .right-page:hover{
+    border: 1px solid #0F4EFB;
+  }
+  .pagination-cont{
+      display: none;
+  }
+.w75w {
+width: 100%;
+}
+.pd-res-none{
+padding: 0 !important;
+}
+.pd-res-none1{
+padding-top: 10px !important;
+padding-bottom: 0px !important;
+}
+  .disp-img{
+      display: unset;
+  }
+.border-btns{
+    text-align: center;
+    border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px;
+border: 1px solid #FB5128;
+}
+.border-btns1{
+    text-align: center;
+    border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px;
+border: 1px solid #7999EF;
+}
+
+.border-margin-set {
+border: 1px solid #E7EDFF;
+border-radius: 6px;
+margin:18px !important;
+}
+  .bg-tab-info {
+background-color: #fff !important;
+}
+.dashboard-content {
+  padding-top: 16px !important;
+}
+.border-grey {
+  display: none !important;
+}
+.small-remove {
+  display: none;
+}
+.search-funcs {
+  display: block;
+}
+
+.res_content {
+  display: block;
+}
+.w50w {
+  width: 100% !important;
+}
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- fevicon -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="img/logo.svg" type="image/jpg" sizes="16x16">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+    <title>Welcome to CoDocs</title>
+  </head>
+  <body>
+    <!-- header section start -->
+    <header>
+      <div class="header-content">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="top-img text-center">
+              <img src="img/logo.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+    <!-- section start for content -->
+  
+    <!-- section end for content -->
+    <!-- main section starts here -->
+    <section>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="main-content mt-50">
+            <div class="main-content-title">
+              <h1 class="text-center">Choose Your Facility</h1>
+            </div>
+            <div class="main-content-form">
+              <form action="">
+                <!-- <div class="input-field">
+                  <input type="email" id="name" class="input-box" required />
+                  <label for="name">Email Address</label>
+                </div> -->
+               
+                
+                
+               
+				<div class="button-main mt-3">
+					<button class="btn btn-primary w-100">
+						
+						<span class="font-18">FACILITY NAME</span>
+					</button>
+				</div>
+                <div class="button-main mt-3">
+					<button class="btn btn-primary w-100">
+						
+						<span class="font-18">FACILITY NAME</span>
+					</button>
+				</div>
+                <div class="button-main mt-3">
+					<button class="btn btn-primary w-100">
+						
+						<span class="font-18">FACILITY NAME</span>
+					</button>
+				</div>
+				
+              </form>
+              
+            </div>
+            <div class="forget-link">
+                <a href="login.html">
+                <p class="text-orange">Log Out</p>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- main section ends here -->
+
+    <!-- Mainly script -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <!-- custom script -->
+    <script>
+      var Days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // index => month [0-11]
+      $(document).ready(function () {
+        var option = '<option value="day">day</option>';
+        var selectedDay = "day";
+        for (var i = 1; i <= Days[0]; i++) {
+          //add option days
+          option += '<option value="' + i + '">' + i + "</option>";
+        }
+        $("#day").append(option);
+        $("#day").val(selectedDay);
+
+        var option = '<option value="month">month</option>';
+        var selectedMon = "month";
+        for (var i = 1; i <= 12; i++) {
+          option += '<option value="' + i + '">' + i + "</option>";
+        }
+        $("#month").append(option);
+        $("#month").val(selectedMon);
+
+        var option = '<option value="month">month</option>';
+        var selectedMon = "month";
+        for (var i = 1; i <= 12; i++) {
+          option += '<option value="' + i + '">' + i + "</option>";
+        }
+        $("#month2").append(option);
+        $("#month2").val(selectedMon);
+
+        var d = new Date();
+        var option = '<option value="year">Birth Year</option>';
+        selectedYear = "year";
+        for (var i = 1930; i <= d.getFullYear(); i++) {
+          // years start i
+          option += '<option value="' + i + '">' + i + "</option>";
+        }
+        $("#year").append(option);
+        $("#year").val(selectedYear);
+      });
+      function isLeapYear(year) {
+        year = parseInt(year);
+        if (year % 4 != 0) {
+          return false;
+        } else if (year % 400 == 0) {
+          return true;
+        } else if (year % 100 == 0) {
+          return false;
+        } else {
+          return true;
+        }
+      }
+
+      function change_year(select) {
+        if (isLeapYear($(select).val())) {
+          Days[1] = 29;
+        } else {
+          Days[1] = 28;
+        }
+        if ($("#month").val() == 2) {
+          var day = $("#day");
+          var val = $(day).val();
+          $(day).empty();
+          var option = '<option value="day">day</option>';
+          for (var i = 1; i <= Days[1]; i++) {
+            //add option days
+            option += '<option value="' + i + '">' + i + "</option>";
+          }
+          $(day).append(option);
+          if (val > Days[month]) {
+            val = 1;
+          }
+          $(day).val(val);
+        }
+      }
+
+      function change_month(select) {
+        var day = $("#day");
+        var val = $(day).val();
+        $(day).empty();
+        var option = '<option value="day">day</option>';
+        var month = parseInt($(select).val()) - 1;
+        for (var i = 1; i <= Days[month]; i++) {
+          //add option days
+          option += '<option value="' + i + '">' + i + "</option>";
+        }
+        $(day).append(option);
+        if (val > Days[month]) {
+          val = 1;
+        }
+        $(day).val(val);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      
+    </style>
+    <!-- fevicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo.svg" type="image/jpg" sizes="16x16" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/table_responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+
+    <title>Welcome to CoDocs</title>
+  </head>
+  <body>
+    <!-- header section start -->
+    <header>
+      <div class="header-content header-padding">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="navmai d-flex">
+              <div class="logo-main">
+                <img src="img/logo.svg" />
+              </div>
+              <div class="logo-main d-xs-none d-flex">
+                <div class="nav-titles position-relative">
+                  <h3><a href="#" class="nav-links">DASHBOARD</a></h3>
+                  <div class="dashboard-mark">2</div>
+                </div>
+                <div class="pl-4 nav-titles">
+                  <h3><a href="#" class="nav-links">PATIENTS</a></h3>
+                </div>
+                <div class="pl-4 nav-titles">
+                  <h3><a href="#" class="nav-links">SETTING</a></h3>
+                </div>
+              </div>
+
+              <div class="dropdown my-drops welcome-part">
+                <div class="welcome-title">
+                  <h1 class="nav-title-right">Welcome, Patient Name</h1>
+                </div>
+                <div>
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    FACILITY NAME
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#"> FACILITY NAME 1</a>
+                    <a class="dropdown-item" href="#"> FACILITY NAME 2</a>
+                    <a class="dropdown-item" href="#"> FACILITY NAME 3</a>
+                  </div>
+                </div>
+              </div>
+              <div class="toggle_hide">
+                <button
+                  type="button"
+                  class="navbar-toggler toggle_hide"
+                  data-toggle="collapse"
+                  data-target="#navbarCollapse"
+                >
+                  <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div
+                  class="collapse navbar-collapse nav_colps"
+                  id="navbarCollapse"
+                >
+                  <div class="navbar-nav">
+                    <div class="position-relative">
+                      <a href="#" class="nav-item nav-link">DASHBOARD</a>
+                      <div class="dashboard-mark">1</div>
+                    </div>
+                    <a href="#" class="nav-item nav-link" tabindex="-1"
+                      >PATIENT</a
+                    >
+                    <a href="#" class="nav-item nav-link" tabindex="-1"
+                      >SETTINGS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- dashboard content -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row dashboard-content d-flex align-items-center">
+          <div class="col-lg-6">
+            <div class="dashboard-title">
+              <h2 class="roboto-font-title">Dashboard</h2>
+            </div>
+          </div>
+          <div class="col-lg-4 small-remove">
+            <div class="dashboard-functions">
+              <div class="position-relative">
+                <div class="form-group mb-0">
+                  <input
+                    type="email"
+                    class="main-form form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Name, Email, Phone, or Code"
+                  />
+                </div>
+                <div class="position-absolute search-icon">
+                  <img src="img/search.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 new-case-btn-main small-remove">
+            <div class="new-case-btn btn">
+              <img src="img/bg_case.svg" class="mr-2" />
+
+              New Case
+            </div>
+          </div>
+        </div>
+        <div class="row border-grey titles">
+          <div class="col-lg-4 col-4 col-md-6 titles">
+            <div class="table-first-part main-flex">
+              <div class="part-1 w50w c-grey">NAME</div>
+              <div class="part-1 w50w c-grey">EMAIL</div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-6 col-md-4 ">
+            <div class="table-sec-part main-flex">
+              <div class="part-1 w25w c-grey w100w">PHONE</div>
+              
+            </div>
+          </div>
+          <div class="col-lg-2 col-2 col-md-2 titles">
+            <div class="table-third-part">
+              <div class="part-1 c-grey">ACTION</div>
+            </div>
+          </div>
+        </div>
+        <div class="row border-margin-set">
+          <div class="col-lg-4 col-6 col-md-6">
+            <div class="table-first-part main-flex res_content">
+              <div class="part-1 w50w pd-res-none1">Patient's Name</div>
+              <div class="part-1 w50w ">patient@patient.com</div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-6 col-md-4">
+            <div class="table-sec-part main-flex">
+              <div class="part-1 w25w w100w">7777-777-777</div>
+              <!-- <div class="part-1 w75w">
+            
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-2 col-12 col-md-2 border-btns1">
+            <div class="table-third-part">
+              <div class="part-1 blue-link">
+                <img src="img/blue_icon.png" class="mr-2 disp-img">
+                <a href="#" class="text-blue">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-tab-info border-margin-set">
+          <div class="col-lg-4 col-6 col-md-6">
+            <div class="table-first-part main-flex res_content">
+              <div class="part-1 w50w pd-res-none1">Patient's Name</div>
+              <div class="part-1 w50w ">patient@patient.com</div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-6 col-md-4">
+            <div class="table-sec-part main-flex">
+              <div class="part-1 w25w w100w">7777-777-777</div>
+              <!-- <div class="part-1 w75w">
+               
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-2 col-12 col-md-2 border-btns1">
+            <div class="table-third-part">
+              <div class="part-1 blue-link">
+                <img src="img/blue_icon.png" class="mr-2 disp-img">
+                <a href="#" class="text-blue">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row border-margin-set">
+          <div class="col-lg-4 col-6 col-md-6">
+            <div class="table-first-part main-flex res_content">
+              <div class="part-1 w50w pd-res-none1">Patient's Name</div>
+              <div class="part-1 w50w ">patient@patient.com</div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-6 col-md-4">
+            <div class="table-sec-part main-flex">
+              <div class="part-1 w25w w100w">7777-777-777</div>
+              <!-- <div class="part-1 w75w">
+               
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-2 col-12 col-md-2 border-btns1">
+            <div class="table-third-part">
+              <div class="part-1 blue-link">
+                <img src="img/blue_icon.png" class="mr-2 disp-img">
+                  <a href="#" class="text-blue">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-tab-info border-margin-set">
+          <div class="col-lg-4 col-6 col-md-6">
+            <div class="table-first-part main-flex res_content">
+              <div class="part-1 w50w pd-res-none1">Patient's Name</div>
+              <div class="part-1 w50w ">patient@patient.com</div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-6 col-md-4">
+            <div class="table-sec-part main-flex">
+              <div class="part-1 w25w w100w">7777-777-777</div>
+              <!-- <div class="part-1 w75w">
+             
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-2 col-12 col-md-2 border-btns1">
+            <div class="table-third-part">
+              <div class="part-1 blue-link">
+                <img src="img/blue_icon.png" class="mr-2 disp-img">
+                <a href="#" class="text-blue">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row border-margin-set ">
+          <div class="col-lg-4 col-6 col-md-6">
+            <div class="table-first-part main-flex res_content">
+              <div class="part-1 w50w pd-res-none1">Patient's Name</div>
+              <div class="part-1 w50w ">patient@patient.com</div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-6 col-md-4">
+            <div class="table-sec-part main-flex">
+              <div class="part-1 w25w w100w">7777-777-777</div>
+              <!-- <div class="part-1 w75w">
+             
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-2 col-12 col-md-2 border-btns1">
+            <div class="table-third-part">
+              <div class="part-1 blue-link">
+                <img src="img/blue_icon.png" class="mr-2 disp-img">
+                <a href="#" class="text-blue">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-tab-info border-margin-set ">
+          <div class="col-lg-4 col-6 col-md-6">
+            <div class="table-first-part main-flex res_content">
+              <div class="part-1 w50w pd-res-none1">Patient's Name</div>
+              <div class="part-1 w50w ">patient@patient.com</div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-6 col-md-4">
+            <div class="table-sec-part main-flex">
+              <div class="part-1 w25w w100w">7777-777-777</div>
+              <!-- <div class="part-1 w75w">
+             
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-2 col-12 col-md-2 border-btns1">
+            <div class="table-third-part">
+              <div class="part-1 blue-link">
+                <img src="img/blue_icon.png" class="mr-2 disp-img">
+                <a href="#" class="text-bluee">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination-cont">
+          <div class="pagination">
+            <a href="#"><img src="img/left_arrow.svg" /></a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">...</a>
+
+            <a href="#">10</a>
+            <a href="#"><img src="img/right_arror.svg" /></a>
+          </div>
+        </div>
+        <div class="paginatr">
+        <div class="pagination-cont-res d-flex justify-content-between">
+         <div class="back-page">
+             <div class="d-flex">
+             <img src="img/left_arrow.svg" class="mr-2">
+            BACK
+        </div>
+         </div>
+         <div class="main-page-paginatn">
+            
+            2
+         </div>
+         <div class="right-page">
+             <div class="d-flex">
+           
+            NEXT
+            <img src="img/right_arror.svg" class="ml-2">
+        </div>
+         </div>
+        </div>
+    </div>
+      </div>
+    </div>
+
+    <div class="search-funcs">
+      <div class="dashboard-functions">
+        <div class="position-relative">
+          <div class="form-group mb-0">
+            <input
+              type="email"
+              class="rounded-0 main-form form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Name, Email, Phone, or Code"
+            />
+          </div>
+          <div class="position-absolute search-icon">
+            <img src="img/search.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rounded-0 new-case-btn btn">
+          <img src="img/bg_case.svg" class="mr-2" />
+
+          New Case
+        </div>
+      </div>
+    </div>
+    <!-- right side modal  -->
+    <!-- <div class=" r modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="r modal-dialog" role="document">
+    <div class="r modal-content">
+
+      
+      <div class="position-relative">
+        <div class="closing-img position-absolute">
+          <img src="img/x.jpg" class="close" data-dismiss="modal">
+        </div>
+           <div class="modal-title-center title-top">
+            <h1 class="roboto-font-title text-center mb-0">Void Form</h1>
+           </div> 
+           <div class="forms-margin">
+            <div class="input-field">
+              <input type="text" id="name" class="input-box" required="">
+              <label for="name">Full Name</label>
+            </div>
+            <div class="input-field mt-2">
+              <input type="text" id="name" class="input-box" required="">
+              <label for="email">Email Address</label>
+            </div>
+            <div class="button-main mt-4">
+              <button class="btn btn-primary w-100 d-flex justify-content-center align-items-center">
+                <img src="img/msg_white.svg" class="mr-2">
+                <span class="font-18">SEND INVITE</span>
+              </button>
+            </div>
+           </div>
+          </div>
+      
+
+    </div>
+  </div>
+</div> -->
+    <!-- dashboard content end -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- custom script -->
+  </body>
+</html>
