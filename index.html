@@ -6,6 +6,7 @@
     <link rel="icon" href="img/logo.svg" type="image/jpg" sizes="16x16">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
     
     <title>Welcome to CoDocs</title>
@@ -75,25 +76,37 @@
                   <input type="name" id="ssn" class="input-box" autocomplete="off" required />
                   <label for="ssn">Social Security Number</label>
                 </div>
-                <div class="dflex">
-                  <div class="input-field mt-2 width-flex select-box">
-                    <select
-                      id="year"
-                      name="yyyy"
-                      onchange="change_year(this)"
-                      for="month"
-                    ></select>
-                  </div>
-                  <div class="input-field mt-2 width-flex select-box">
-                    <select
-                      id="month"
-                      name="mm"
-                      onchange="change_month(this)"
-                    ></select>
-                  </div>
-                  <div class="input-field mt-2 width-flex select-box">
-                    <select id="day" name="dd"></select>
-                  </div>
+               
+
+
+                <div class="dflex mt-2">
+                  <div class="select-box1">
+                    <select class="select-2nd" name="" id="">
+                       <option value="a">Birth Month</option>
+                        <option value="b">January</option>
+                        <option value="b">February</option>
+                        <option value="b">March</option>
+                        <option value="b">April</option>
+                       </select>
+                   </div>
+                   <div class="select-box1 margin-5">
+                    <select class="select-2nd" name="" id="">
+                       <option value="a">Birth Day</option>
+                        <option value="b">1</option>
+                        <option value="b">2</option>
+                        <option value="b">3</option>
+                        <option value="b">4</option>
+                       </select>
+                   </div>
+                   <div class="select-box1">
+                    <select class="select-2nd" name="" id="">
+                       <option value="a">Birth Year</option>
+                        <option value="b">1998</option>
+                        <option value="b">1997</option>
+                        <option value="b">1996</option>
+                        <option value="b">1995</option>
+                       </select>
+                   </div>
                 </div>
                 <div class="check-box-content">
                   <div class="check-box d-flex">
@@ -102,14 +115,15 @@
                     </div>
                     <div class="ml-2">
                       I agree to the
-                      <span class="text-orange">terms of service</span>
+                      <span class="text-orange"><a href="#" class="text-orange orange-link">terms of service</a></span>
                     </div>
                   </div>
                 </div>
+               
 				<div class="button-main">
 					<button class="btn btn-primary w-100">
-						<img src="img/button_icon.svg" class="btn-img">
-						<span class="font-18">SIGN UP</span>
+						<img src="img/button_icon.svg" class="btn-img mr-2">
+						<span class="font-18 font_is">SIGN UP</span>
 					</button>
 				</div>
 				
@@ -118,8 +132,9 @@
            
           </div>
           <div class="forget-link">
-            <a href="forget.html">
-            <p class="text-orange">Forget password</p>
+            <a href="login.html">
+              
+            <p class="text-blue "><span class="text-dark">Already have an accoount ? </span>Log In</p>
           </a>
           </div>
         </div>
@@ -133,96 +148,6 @@
     <script src="js/popper.min.js"></script>
 
     <!-- custom script -->
-    <script>
-      var Days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // index => month [0-11]
-      $(document).ready(function () {
-        var option = '<option value="day">Birth Day</option>';
-        var selectedDay = "day";
-        for (var i = 1; i <= Days[0]; i++) {
-          //add option days
-          option += '<option value="' + i + '">' + i + "</option>";
-        }
-        $("#day").append(option);
-        $("#day").val(selectedDay);
-
-        var option = '<option value="month">Birth Month</option>';
-        var selectedMon = "month";
-        for (var i = 1; i <= 12; i++) {
-          option += '<option value="' + i + '">' + i + "</option>";
-        }
-        $("#month").append(option);
-        $("#month").val(selectedMon);
-
-        var option = '<option value="month">Birth Month</option>';
-        var selectedMon = "month";
-        for (var i = 1; i <= 12; i++) {
-          option += '<option value="' + i + '">' + i + "</option>";
-        }
-        $("#month2").append(option);
-        $("#month2").val(selectedMon);
-
-        var d = new Date();
-        var option = '<option value="year">Birth Year</option>';
-        selectedYear = "year";
-        for (var i = 1930; i <= d.getFullYear(); i++) {
-          // years start i
-          option += '<option value="' + i + '">' + i + "</option>";
-        }
-        $("#year").append(option);
-        $("#year").val(selectedYear);
-      });
-      function isLeapYear(year) {
-        year = parseInt(year);
-        if (year % 4 != 0) {
-          return false;
-        } else if (year % 400 == 0) {
-          return true;
-        } else if (year % 100 == 0) {
-          return false;
-        } else {
-          return true;
-        }
-      }
-
-      function change_year(select) {
-        if (isLeapYear($(select).val())) {
-          Days[1] = 29;
-        } else {
-          Days[1] = 28;
-        }
-        if ($("#month").val() == 2) {
-          var day = $("#day");
-          var val = $(day).val();
-          $(day).empty();
-          var option = '<option value="day">day</option>';
-          for (var i = 1; i <= Days[1]; i++) {
-            //add option days
-            option += '<option value="' + i + '">' + i + "</option>";
-          }
-          $(day).append(option);
-          if (val > Days[month]) {
-            val = 1;
-          }
-          $(day).val(val);
-        }
-      }
-
-      function change_month(select) {
-        var day = $("#day");
-        var val = $(day).val();
-        $(day).empty();
-        var option = '<option value="day">day</option>';
-        var month = parseInt($(select).val()) - 1;
-        for (var i = 1; i <= Days[month]; i++) {
-          //add option days
-          option += '<option value="' + i + '">' + i + "</option>";
-        }
-        $(day).append(option);
-        if (val > Days[month]) {
-          val = 1;
-        }
-        $(day).val(val);
-      }
-    </script>
+ 
   </body>
 </html>

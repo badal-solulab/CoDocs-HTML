@@ -1,3 +1,13 @@
+@media only screen and (min-width:1024px){
+   
+    .boot-padding-right-none{
+        padding-right: 0;
+    }
+    .boot-padding-left-none{
+        padding-left: 0;
+    }
+  
+}
 @media only screen and (min-width:1024px) and (max-width:1100px){
    
     
@@ -28,6 +38,13 @@
 }
 
 @media only screen and (max-width:1024px){
+    .breadcrumb {
+ 
+        padding: .75rem 1rem !important;
+       
+      }
+      
+      
     .w-50{
         width: 100% !important;
     }
@@ -136,6 +153,17 @@
 }
  
 @media only screen and (max-width:768px){
+    select.select-2nd {
+     
+        background-position: 96% 50% !important;
+      
+    }
+    .margin-5{
+        margin-top: 20px !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-bottom: 20px !important;
+    }
     .width-flex {
         margin-right:0px !important;
     }

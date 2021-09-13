@@ -6,6 +6,7 @@
     <link rel="icon" href="img/logo.svg" type="image/jpg" sizes="16x16" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
     <title>Welcome to CoDocs</title>
   </head>
@@ -25,7 +26,7 @@
                        2
                    </div></div>
                  
-                 <div class="pl-3 nav-titles"><h3><a href="#" class="nav-links">SETTING</a></h3></div>
+                 <div class="pl-4 nav-titles"><h3><a href="#" class="nav-links">SETTINGS</a></h3></div>
                  
                  
                </div>
@@ -69,51 +70,63 @@
     <section>
       <div class="container-fluid">
         <div class="container">
-          <div class="main-content mt-50 mb-95">
+          <div class="main-content">
             <div class="main-content-title">
               <h1 class="text-center">Settings</h1>
             </div>
             <div class="main-content-form">
               <form action="">
                 <div class="input-field">
-                  <input type="text" id="name" class="input-box" required />
+                  <input type="text" id="name" class="input-box" autocomplete="off" required />
                   <label for="name">Full Name</label>
                 </div>
                 <div class="input-field mt-2">
-                  <input type="text" id="email" class="input-box" required />
+                  <input type="text" id="email" class="input-box" autocomplete="off" required />
                   <label for="email">Email Address</label>
                 </div>
                 <div class="input-field mt-2">
-                  <input type="password" id="password" class="input-box" required />
-                  <label for="password">Password</label>
+                  <input type="password" id="password1" class="input-box" autocomplete="off" required />
+                  <label for="password1">Password</label>
                 </div>
                 <div class="input-field mt-2">
-                  <input type="password" id="password2" class="input-box" required />
+                  <input type="password" id="password2" class="input-box" autocomplete="off" required />
                   <label for="password2">Password Again</label>
                 </div>
                 <div class="input-field mt-2">
-                  <input type="name" id="ssn" class="input-box" required />
+                  <input type="name" id="ssn" class="input-box" autocomplete="off" required />
                   <label for="ssn">Social Security Number</label>
                 </div>
-                <div class="dflex">
-                  <div class="input-field mt-2 width-flex select-box">
-                    <select
-                      id="year"
-                      name="yyyy"
-                      onchange="change_year(this)"
-                      for="month"
-                    ></select>
-                  </div>
-                  <div class="input-field mt-2 width-flex select-box">
-                    <select
-                      id="month"
-                      name="mm"
-                      onchange="change_month(this)"
-                    ></select>
-                  </div>
-                  <div class="input-field mt-2 width-flex select-box">
-                    <select id="day" name="dd"></select>
-                  </div>
+               
+
+
+                <div class="dflex mt-2">
+                  <div class="select-box1">
+                    <select class="select-2nd" name="" id="">
+                       <option value="a">Birth Month</option>
+                        <option value="b">January</option>
+                        <option value="b">February</option>
+                        <option value="b">March</option>
+                        <option value="b">April</option>
+                       </select>
+                   </div>
+                   <div class="select-box1 margin-5">
+                    <select class="select-2nd" name="" id="">
+                       <option value="a">Birth Day</option>
+                        <option value="b">1</option>
+                        <option value="b">2</option>
+                        <option value="b">3</option>
+                        <option value="b">4</option>
+                       </select>
+                   </div>
+                   <div class="select-box1">
+                    <select class="select-2nd" name="" id="">
+                       <option value="a">Birth Year</option>
+                        <option value="b">1998</option>
+                        <option value="b">1997</option>
+                        <option value="b">1996</option>
+                        <option value="b">1995</option>
+                       </select>
+                   </div>
                 </div>
                 <div class="check-box-content">
                   <div class="check-box d-flex">
@@ -126,15 +139,23 @@
                     </div>
                   </div>
                 </div>
-                <div class="button-main">
-                  <button class="btn btn-primary w-100">
-                    <img src="img/button_icon.svg" class="btn-img" />
-                    <span class="font-18">SAVE</span>
-                  </button>
-                </div>
+               
+				<div class="button-main">
+					<button class="btn btn-primary w-100">
+						<img src="img/button_icon.svg" class="btn-img mr-2">
+						<span class="font-18 font_is">SAVE</span>
+					</button>
+				</div>
+				
               </form>
             </div>
+           
           </div>
+          <!-- <div class="forget-link">
+            <a href="forget.html">
+            <p class="text-orange">Forget password</p>
+          </a>
+          </div> -->
         </div>
       </div>
     </section>
