@@ -1138,7 +1138,7 @@ td.last-table-cont{
   background-image: url('../img/sidebar.svg');
 }
 .navmai{
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   padding: 0 0 0 0px;
 }
@@ -1206,6 +1206,49 @@ input:-internal-autofill-selected {
 
 
 /* bug fixing */
+/* .p1::after{
+  background-color: red;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  top: 40px;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+.p1:hover::after{
+  width: 100%;
+} */
+.col-lg-2 .new-case-btn img {
+  padding-top: 2px;
+}
+.col-lg-3 .new-case-btn img {
+  padding-top: 2px;
+}
+.patent-content-form-bottom {
+position: relative;
+}
+.pagination-cont .pagination a.border-0:hover {
+  background: transparent;
+
+}
+.audit-log-box::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  border-radius: 0px;
+  max-height: 137px;
+}
+.big_pro_btn{
+  max-width: 262px !important;
+}
+.table-third-part-right {
+  text-align: center;
+}
 .pl-47{
   padding-left: 47px;
 }

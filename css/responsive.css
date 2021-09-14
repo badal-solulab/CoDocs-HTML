@@ -23,16 +23,19 @@
         display: flex;
         align-items: center;
         width: 100%;
-        max-width: 348px !important;
+        max-width: 413px !important;
+    }
+    .title_prob{
+        max-width: 372px !important;
     }
      .diff-welc{
         max-width: 183px !important;
     }
     .welcome-title {
-       padding-right: 10px;
+       padding-right: 25px;
       }
       .master-admin{
-        max-width: 398px !important;
+        max-width: 413px !important;
         width: 100% !important;
     }
 }
@@ -433,3 +436,9 @@ display: none !important;
     }
     /* For landscape layouts only */
   }
+  @media (min-width: 576px){
+.modal-dialog {
+    max-width: 770px;
+    margin: 1.75rem auto;
+}
+}
