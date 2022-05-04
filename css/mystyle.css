@@ -580,6 +580,7 @@ textarea:focus-visible{
   margin-top: 120px;
 }
 .edit-icon {
+  background-color: #F3F6FF;
   top: 8px;
   right: 18px;
 }
@@ -1219,6 +1220,9 @@ input:-internal-autofill-selected {
 .p1:hover::after{
   width: 100%;
 } */
+.pr-45{
+  padding-right: 45px;
+}
 .top-diff-space {
   margin-top: 81px;
 }
@@ -1247,7 +1251,7 @@ position: relative;
   max-height: 137px;
 }
 .big_pro_btn{
-  max-width: 262px !important;
+  max-width: 262px;
 }
 .table-third-part-right {
   padding-left: 60px;

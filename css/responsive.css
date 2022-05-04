@@ -161,6 +161,21 @@
 }
  
 @media only screen and (max-width:768px){
+    .big_pro_btn{
+        max-width: 100% !important;
+    }
+    
+    /* .edit-icon {
+        background-color: #F3F6FF !important;
+        top: 5px !important;
+        right: 9px !important;
+    } */
+    .small_w25w{
+        width: 100% !important;
+    }
+    .table-third-part-right{
+        padding-left: 0px !important;
+    }
     select.select-2nd {
      
         background-position: 96% 50% !important;
@@ -369,6 +384,7 @@ display: none !important;
 .case-content-res{
     width: 50% !important;
     }
+   
 }
 
 
